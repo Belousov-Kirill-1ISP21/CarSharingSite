@@ -1,0 +1,584 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.main {
+    width: 87%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.SideBackgroundContainer {
+    width: 13%;
+}
+
+.SideBackground {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.SideBackgroundImg {
+    background-image: linear-gradient(to right, rgb(232 232 232 / 10.8%), rgb(72 100 111 / 60%)), url("../assets/SideBackground/SideBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.01);
+}
+
+/* Header Styles */
+.Header {
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.HeaderLeft {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-right: 4%;
+}
+
+.HeaderLogoButton {
+    background-color: white;
+    border: none;
+    font-size: 4vh;
+    text-align: left;
+    outline: none;
+    margin-right: 4%;
+}
+
+.HeaderLeftLink {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.HeaderLeftButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.HeaderLeftButton {
+    background-color: white;
+    border: none;
+    color: gray;
+    font-size: 1.4vh;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.HeaderLeftButton:hover {
+    color: #000033;
+}
+
+.HeaderRight {
+    display: flex;
+    align-items: center;
+}
+
+.HeaderRightButton {
+    background-color: #837DBA;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.HeaderRightButton:hover {
+    background-color: #6a639c;
+}
+
+/* Order Form Styles */
+.OrderForm {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.OrderFormH1Container {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.OrderFormH1 {
+    font-size: 3vh;
+    color: rgba(0, 0, 0, 0.88);
+    font-weight: 600;
+}
+
+.OrderFormH2Container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.OrderFormH2 {
+    font-size: 2.2vh;
+    color: #333;
+    font-weight: 600;
+    width: 45%;
+    text-align: center;
+}
+
+.OrderFormFormsContainer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2%;
+}
+
+.CarFormContainer,
+.ClientFormContainer,
+.TarifFormContainer {
+    background: #f8f9fa;
+    border-radius: 14px;
+    padding: 3%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.CarContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 44%;
+}
+
+.ClientContainer{
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+}
+
+.CarFormContainer {
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ClientFormContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.TarifFormContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.OrderFormСarInput {
+    height: 45px;
+    width: 100%;
+    padding: 0 15px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.6vh;
+    transition: border-color 0.3s;
+}
+
+.OrderFormСlientInput {
+    height: 45px;
+    width: 48%;
+    padding: 0 15px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.6vh;
+    transition: border-color 0.3s;
+}
+
+.OrderFormFormInput:focus {
+    outline: none;
+    border-color: #4669B0;
+}
+
+select {
+    height: 45px;
+    width: 48%;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.3vh;
+    color: #333;
+    background-color: white;
+    cursor: pointer;
+    background-image: url('../assets/General/ArrowDown.png');
+    background-repeat: no-repeat;
+    appearance: none;
+    background-position: calc(100% - 14%) center; 
+    background-size: 8%;
+}
+
+select:focus {
+    outline: none;
+    border-color: #4669B0;
+}
+
+.OrderFormButton {
+    background-color: white;
+    border-radius: 8px;
+    border-width: 4px;
+    border: #F2F4F8 solid;
+    color: black;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.OrderFormButtonText {
+    font-size: 1.6vh;
+    margin: 0;
+}
+
+.OrderFormButtonImg {
+    width: 16px;
+    height: 16px;
+}
+
+.OrderFormFormButton {
+    height: 45px;
+    width: 100%;
+    background-color: #000033;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.6vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.OrderFormFormButton:hover {
+    background-color: #3a5a9a;
+}
+
+.OrderFormTotalContainer {
+    width: 58%;
+    text-align: left;
+    margin: 2% 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.OrderFormTotalContainer p {
+    font-size: 2vh;
+    color: #333;
+    margin: 0;
+}
+
+.OrderFormFormButtonContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.OrderFormFormLink {
+    width: 44%;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+.Footer {
+    width: 100%;
+    min-height: 22vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.FooterButtonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    width: 98%;
+    margin-bottom: 2%;
+}
+
+.FooterButton {
+    background-color: transparent;
+    border: none;
+    color: #666;
+    font-size: 1.5vh;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.FooterButton:hover {
+    color: #000033;
+}
+
+.FooterText {
+    color: gray;
+    font-size: 1.4vh;
+    margin: 0;
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 1200px) {
+    .SideBackgroundContainer {
+        display: none;
+    }
+    
+    .main {
+        width: 100%;
+    }
+    
+    .OrderFormFormsContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .CarContainer,
+    .ClientContainer {
+        width: 80%;
+    }
+    
+    .CarContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .CarFormContainer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .OrderFormButton {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .OrderFormH2Container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .OrderFormH2 {
+        width: 100%;
+    }
+    
+    .OrderFormTotalContainer {
+        width: 100%;
+    }
+    
+    .OrderFormFormLink {
+        width: 80%;
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .Header {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .HeaderLeft {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 15px;
+        padding-right: 0;
+    }
+    
+    .HeaderLeftButtonContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    
+    .HeaderLogoButton {
+        font-size: 3vh;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .HeaderRight {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .OrderFormH1 {
+        font-size: 2.5vh;
+    }
+    
+    .OrderFormH1Container {
+        width: 95%;
+    }
+    
+    .OrderFormH2Container {
+        width: 95%;
+    }
+    
+    .OrderFormH2 {
+        font-size: 2vh;
+    }
+    
+    .OrderFormFormsContainer {
+        width: 95%;
+        gap: 20px;
+    }
+    
+    .CarContainer,
+    .ClientContainer {
+        width: 100%;
+    }
+    
+    .ClientFormContainer,
+    .TarifFormContainer {
+        flex-direction: column;
+    }
+    
+    .OrderFormСlientInput,
+    select {
+        width: 100%;
+    }
+    
+    .OrderFormFormButtonContainer {
+        width: 95%;
+    }
+    
+    .OrderFormFormLink {
+        width: 100%;
+    }
+    
+    .FooterButtonContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .FooterButton {
+        font-size: 1.8vh;
+        padding: 10px;
+    }
+}
+
+/* Адаптивность для маленьких мобильных устройств */
+@media (max-width: 480px) {
+    .OrderForm {
+        padding: 5% 0;
+    }
+    
+    .OrderFormH1 {
+        font-size: 2.2vh;
+    }
+    
+    .OrderFormH2 {
+        font-size: 1.8vh;
+    }
+    
+    .CarFormContainer,
+    .ClientFormContainer,
+    .TarifFormContainer {
+        padding: 5%;
+    }
+    
+    .OrderFormСarInput,
+    .OrderFormСlientInput,
+    select,
+    .OrderFormFormButton {
+        font-size: 1.8vh;
+        height: 50px;
+    }
+    
+    .OrderFormButton {
+        padding: 15px;
+        font-size: 1.8vh;
+    }
+    
+    .OrderFormTotalContainer p {
+        font-size: 1.8vh;
+    }
+    
+    .FooterText {
+        font-size: 1.6vh;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
+/* Дополнительные улучшения для очень маленьких экранов */
+@media (max-width: 360px) {
+    
+    .OrderFormH1 {
+        font-size: 2vh;
+    }
+    
+    .OrderFormButtonText {
+        font-size: 1.8vh;
+    }
+    
+    .OrderFormFormButton {
+        font-size: 1.8vh;
+    }
+}

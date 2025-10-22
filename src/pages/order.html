@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индекс Драйв</title>
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+
+<body>
+    
+    <div class="wrapper">
+
+        <div class="SideBackgroundContainer">
+            <div class="SideBackground">
+                <div class="SideBackgroundImg"></div>         
+            </div>
+        </div>
+
+        <div class="main">
+            
+            <Header class="Header" id="Header">
+                <div class="HeaderLeft">
+                    <button class="HeaderLogoButton">
+                        <a href="../index.html" class="HeaderLeftLink">Индекс Драйв</a>
+                    </button>
+                    
+                    <div class="HeaderLeftButtonContainer">
+        
+                        <button class="HeaderLeftButton">
+                            <a href="./order.html" class="HeaderLeftButtonContainerLink">Бронирование</a>
+                        </button>
+        
+                        <button class="HeaderLeftButton">
+                            <a href="./offices.html" class="HeaderLeftButtonContainerLink">Филиалы</a>
+                        </button>
+                   
+                    </div>
+                </div>
+        
+                <div class="HeaderRight">
+                    <a href="./registration.html" class="HeaderRightLink">
+                        <button class="HeaderRightButton">Личный кабинет</button>
+                    </a>
+                </div>
+            </Header>
+
+            <div class="OrderForm">
+
+                <div class="OrderFormH1Container">
+                    <h1 class="OrderFormH1">Заполните форму для оформления тарифа</h1>
+                </div>
+
+                <div class="OrderFormH2Container">
+                    <h2 class="OrderFormH2">Автомобили</h2>
+                    <h2 class="OrderFormH2">Информация о пользователе</h2>
+                </div>
+
+                <div class="OrderFormFormsContainer">
+
+                    <div class="CarContainer">
+
+                        <div class="CarFormContainer">
+                            <input class="OrderFormСarInput" placeholder="Код машины"/>
+                            <input class="OrderFormСarInput" placeholder="Номер машины"/>
+                            <input class="OrderFormСarInput" placeholder="Название машины"/>
+                            <input class="OrderFormСarInput" placeholder="Марка"/>
+                            <input class="OrderFormСarInput" placeholder="Филиал"/>
+                            <input class="OrderFormСarInput" placeholder="Стоимость бронирования (Руб/день)"/>
+                            <button type="button" class="OrderFormFormButton">Отмена</button>
+                        </div>
+
+                        <button class="OrderFormButton">
+                            <p class="OrderFormButtonText">Добавить</p>
+                            <img src="../assets/General/ArrowDown.png" class="OrderFormButtonImg" alt="Стрелка"/>
+                        </button>
+
+                    </div>
+
+                    <div class="ClientContainer">
+                        <div class="ClientFormContainer">
+                            <input class="OrderFormСlientInput" placeholder="Фамилия"/>
+                            <input class="OrderFormСlientInput" placeholder="Имя"/>
+                            <input class="OrderFormСlientInput" placeholder="Отчество"/>
+                            <input class="OrderFormСlientInput" placeholder="+7 (000) 000-0000"/>
+                            <input class="OrderFormСlientInput" placeholder="Дата рождения    (дд.мм.гггг)"/>
+                            <select>
+                                <option>Выберите карту</option>
+                                <option>Visa</option>
+                                <option>Мир</option>
+                                <option>MasterCard</option>
+                            </select>
+                            <input class="OrderFormСlientInput" placeholder="Серия паспорта"/>
+                            <input class="OrderFormСlientInput" placeholder="Номер паспорта"/>
+                        </div>
+
+                        <div class="TarifFormContainer">
+                            <input class="OrderFormСlientInput" placeholder="Дата начала аренды (дд.мм.гггг)"/>
+                            <input class="OrderFormСlientInput" placeholder="Дата конца аренды (дд.мм.гггг)"/>
+                            <button type="button" class="OrderFormFormButton">Изменить тариф</button>
+                        </div>
+                
+
+                        <div class="OrderFormTotalContainer">
+                            <p>Финальная стоимость: <b>4444руб</b></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="OrderFormFormButtonContainer">
+                    <a href="./profile.html" class="OrderFormFormLink">
+                        <button type="button" class="OrderFormFormButton">Оформить</button>
+                    </a> 
+                </div>
+            
+            </div>
+
+            <Footer class="Footer">
+    
+                <div class="FooterButtonContainer">
+                    <button class="FooterButton">
+                        <a href="../index.html" class="FooterButtonContainerLink">Главная</a>
+                    </button>
+                    <button class="FooterButton">
+                        <a href="../pages/cards.html" class="FooterButtonContainerLink">Банковские карты</a>
+                    </button>
+                    <button class="FooterButton">
+                        <a href="../pages/catalog.html" class="FooterButtonContainerLink">Каталог</a>
+                    </button>
+                    <button class="FooterButton">
+                        <a href="../pages/profile.html" class="FooterButtonContainerLink">Личный кабинет</a>
+                    </button>
+                    <button class="FooterButton">
+                        <a href="../pages/registration.html" class="FooterButtonContainerLink">Регистрация</a>
+                    </button>
+                    <button class="FooterButton">
+                        <a href="../pages/autorization.html" class="FooterButtonContainerLink">Авторизация</a>
+                    </button>
+                    <button class="FooterButton">
+                        <a href="../pages/history.html" class="FooterButtonContainerLink">История бронирований</a>
+                    </button>
+                    <button class="FooterButton">
+                        <a href="../pages/order.html" class="FooterButtonContainerLink">Бронирование</a>
+                    </button>
+                    <button class="FooterButton">
+                        <a href="../pages/offices.html" class="FooterButtonContainerLink">Филиалы</a>
+                    </button>
+                    <button class="FooterButton">Контакты: <b>8 800 535 35 35</b></button>
+                </div>
+        
+                <p class="FooterText">©2025 Страхование онлаин</p>
+            </Footer>
+
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: row;  
+}
+
+.main{
+    width: 73%;
+    height: 100%;
+}
+
+.SideBackgroundContainer{
+    width: 27%;
+    height: 100vh;
+}
+
+.SignInForm{
+    background-color: white;
+    width: 100%;
+    height: 90vh;
+}
+
+.SignInFormH1{
+    font-size: 4vh;
+}
+
+.SignInFormForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    width: 100%;
+    height: 64vh;
+}
+
+.SignInFormFormInput{
+    height: 8%;
+    width: 44%;
+    text-indent: 4%;
+    color: #9E9E9E;
+}
+
+.SignInFormFormContainer{
+    height: 4%;
+    width: 44%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.SignInFormFormCheckbox{
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.SignInFormFormCheckboxContainer{
+    width: 44%;
+    display: inline-block;
+}
+
+.SignInFormFormCheckboxLabel{
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1.5vh;
+    color: #616161;
+}
+
+.SignInFormFormForgotPasswordButton{
+    display: inline-block;
+    margin-left: 2%;
+    border: white;
+    background-color: white;
+    font-size: 1.5vh;
+    color: #616161;
+    padding-bottom: 2%;
+}
+
+.SignInFormFormLink{
+    height: 8%;
+    width: 44%;
+}
+
+.SignInFormFormButton{
+    height: 100%;
+    width: 100%;
+    background-color: #000033;
+    border-color: #000033;
+    color: white;
+}
+
+.AuthHeader{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+}
+
+.AuthHeaderContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 4%;
+}
+
+.AuthHeaderLogoButtonLink{
+    text-decoration: none;
+    width: 12%;
+    height: 44%;
+    display: inline-block;
+    margin: 1%;
+}
+
+.AuthHeaderLogoButton{
+    width: 100%;
+    height: 100%;
+    background-color: #000033;
+    border-color: #000033;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+}
+
+.AuthHeaderRightLink{
+    text-decoration: none;
+    width: 12%;
+    height: 44%;
+    display: inline-block;
+    margin: 1%;
+}
+
+.AuthHeaderRightButton{
+    width: 100%;
+    height: 100%;
+    background-color: #000033;
+    border-color: #000033;
+    border-radius: 6px;
+    color: white;
+}
+
+.SideBackground {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.SideBackgroundImg{
+    background-image: linear-gradient(to right, rgb(232 232 232 / 10.8%), rgb(72 100 111 / 60%)), url("../assets/SideBackground/SideBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.01);
+    overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+
+    .AuthHeaderContainer {
+        justify-content: space-around;
+    }
+
+    .main{
+        width: 100%;
+    }
+
+    .AuthHeaderLogoButtonLink {
+        width: 22%;
+    }
+
+    .AuthHeaderLogoButton {
+        width: 100%;
+    }
+
+    .AuthHeaderRightLink {
+        width: 24%;
+    }
+
+    .AuthHeaderRightButton {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .AuthHeaderContainer {
+        justify-content: space-around;
+    }
+
+    .main{
+        width: 100%;
+    }
+
+    .AuthHeaderLogoButtonLink {
+        width: 22%;
+    }
+
+    .AuthHeaderLogoButton {
+        width: 100%;
+    }
+
+    .AuthHeaderRightLink {
+        width: 24%;
+    }
+
+    .AuthHeaderRightButton {
+        width: 100%;
+    }
+
+
+    .SignInFormFormContainer {
+        width: 74%;
+    }
+
+    .SignInFormFormInput {
+        width: 74%;
+    }
+
+    .SignInFormFormLink {
+        width: 74%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+   
+    .SideBackgroundContainer{
+        display: none;
+        width: none;
+    }
+
+    .AuthHeaderContainer {
+        justify-content: space-around;
+    }
+
+    .main{
+        width: 100%;
+    }
+
+    .AuthHeaderLogoButtonLink {
+        width: 34%;
+    }
+
+    .AuthHeaderLogoButton {
+        width: 100%;
+    }
+
+    .AuthHeaderRightLink {
+        width: 34%;
+    }
+
+    .AuthHeaderRightButton {
+        width: 100%;
+    }
+
+    .SignInFormFormInput {
+        width: 66vw;
+    }
+
+    .SignInFormFormText {
+        margin-left: 4%;
+    }
+
+    .SignInFormFormContainer {
+        width: 74%;
+    }
+
+    .SignInFormFormInput {
+        width: 74%;
+    }
+
+    .SignInFormFormLink {
+        width: 74%;
+    }
+}

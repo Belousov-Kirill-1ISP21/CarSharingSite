@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.main{
+    width: 73%;
+    height: 100%;
+}
+
+.SideBackgroundContainer{
+    width: 27%;
+    height: 100vh;
+}
+
+.AuthHeader{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+}
+
+.AuthHeaderContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 4%;
+}
+
+.AuthHeaderLogoButtonLink{
+    text-decoration: none;
+    width: 12%;
+    height: 44%;
+    display: inline-block;
+    margin: 1%;
+}
+
+.AuthHeaderLogoButton{
+    width: 10vw;
+    height: 100%;
+    background-color: #000033;
+    border-color: #000033;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+}
+
+.AuthHeaderRightLink{
+    text-decoration: none;
+    width: 12%;
+    height: 44%;
+    display: inline-block;
+    margin: 1%;
+}
+
+.AuthHeaderRightButton{
+    width: 10vw;
+    height: 100%;
+    background-color: #000033;
+    border-color: #000033;
+    border-radius: 6px;
+    color: white;
+}
+
+.SideBackground {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.SideDarkBackgroundImg{
+    background-image: linear-gradient(to right, rgb(232 232 232 / 10.8%), rgb(72 100 111 / 60%)), url("../assets/SideBackground/SideDarkBackground.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.01);
+    overflow: hidden;
+}
+
+.SignUpForm{
+    background-color: white;
+    width: 100%;
+    height: 90vh;
+}
+
+.SignInFormH1{
+    font-size: 4vh;
+}
+
+.SignUpFormForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2%;
+    width: 100%;
+    height: 77vh;
+}
+
+.SignUpFormFormInput{
+    height: 8%;
+    width: 32vw;
+    text-indent: 4%;
+    color: #9E9E9E;
+}
+
+.SignUpFormFormLink{
+    height: 8%;
+    width: 44%;
+}
+
+.SignUpFormFormButton{
+    height: 100%;
+    width: 100%;
+    background-color: #000033;
+    border-color: #000033;
+    color: white;
+    border-radius: 6px;
+}
+
+.SignUpFormFormText{
+    font-size: 1vh;
+    color: #9E9E9E;
+}
+
+@media (max-width: 768px) {
+
+    .AuthHeaderContainer {
+        justify-content: space-around;
+    }
+
+    .main{
+        width: 100%;
+    }
+
+    .AuthHeaderLogoButtonLink {
+        width: 22%;
+    }
+
+    .AuthHeaderLogoButton {
+        width: 100%;
+    }
+
+    .AuthHeaderRightLink {
+        width: 24%;
+    }
+
+    .AuthHeaderRightButton {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+   
+    .SideBackgroundContainer{
+        display: none;
+        width: none;
+    }
+
+    .AuthHeaderContainer {
+        justify-content: space-around;
+    }
+
+    .main{
+        width: 100%;
+    }
+
+    .AuthHeaderLogoButtonLink {
+        width: 34%;
+    }
+
+    .AuthHeaderLogoButton {
+        width: 100%;
+    }
+
+    .AuthHeaderRightLink {
+        width: 34%;
+    }
+
+    .AuthHeaderRightButton {
+        width: 100%;
+    }
+
+    .SignUpFormFormInput {
+        width: 66vw;
+    }
+
+    .SignUpFormFormText {
+        margin-left: 4%;
+    }
+
+}

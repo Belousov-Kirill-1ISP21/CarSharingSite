@@ -1,0 +1,554 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.main {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 13%;
+}
+
+.SideBackgroundContainer {
+    width: 13%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.SideBackground {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.SideBackgroundImg {
+    background-image: linear-gradient(to right, rgb(232 232 232 / 10.8%), rgb(72 100 111 / 60%)), url("../assets/SideBackground/SideBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    transform: scale(1.01);
+}
+
+/* Header Styles */
+.Header {
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.HeaderLeft {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-right: 4%;
+}
+
+.HeaderLogoButton {
+    background-color: white;
+    border: none;
+    font-size: 4vh;
+    text-align: left;
+    outline: none;
+    margin-right: 4%;
+}
+
+.HeaderLeftLink {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.HeaderLeftButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.HeaderLeftButton {
+    background-color: white;
+    border: none;
+    color: gray;
+    font-size: 1.4vh;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.HeaderLeftButton:hover {
+    color: #000033;
+}
+
+.HeaderRight {
+    display: flex;
+    align-items: center;
+}
+
+.HeaderRightButton {
+    background-color: #837DBA;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.HeaderRightButton:hover {
+    background-color: #6a639c;
+}
+
+/* Card Block Styles */
+
+.CardsBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.CardBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0;
+    height: 100%;
+    width: 44%;
+}
+
+.CardBlockH1Container {
+    text-align: center;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.CardBlockH1 {
+    font-size: 4vh;
+    color: #333;
+    font-weight: 600;
+}
+
+.CardBlockContainer {
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+    margin-bottom: 5%;
+}
+
+.CardBlockCard {
+    margin: 2% 0;
+    width: 350px;
+    min-height: 200px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.CardBlockCard::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+}
+
+.CardBlockCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.CardBlockCardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0;
+    z-index: 1;
+}
+
+.CardBlockCardContainer:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.CardBlockCardContainer:last-child {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.CardBlockCardImg {
+    object-fit: cover;
+    width: inherit;
+}
+
+.CardBlockCardH1 {
+    font-size: 1.8vh;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.CardBlockCardText {
+    font-size: 1.6vh;
+    margin: 0;
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: black;
+}
+
+.CardBlockCardButton {
+    width: 80%;
+    height: 40px;
+    color: white;
+    background-color: #000033;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.6vh;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.CardBlockCardButton:hover {
+    background-color: #3a5a9a;
+    transform: scale(1.05);
+}
+
+/* Add Card Container Styles */
+.AddCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0;
+    width: 55%;
+    height: 100%;
+}
+
+.AddCardButton {
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 1%;
+    box-shadow: 0 4px 15px rgba(70, 105, 176, 0.3);
+    margin-left: 18%;
+    cursor: pointer;
+}
+
+.AddCardButton:hover {
+    background-color: #3a5a9a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(70, 105, 176, 0.4);
+}
+
+.AddCardButtonText {
+    font-size: 1.8vh;
+    margin: 0;
+    font-weight: 600;
+}
+
+.AddCardButtonImg {
+    width: 20px;
+    height: 60%;
+    margin-top: 2%;
+}
+
+.AddCardButton:hover .AddCardButtonImg {
+    transform: translateY(2px);
+}
+
+/* Модальное окно */
+.modal-checkbox {
+    display: none;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-checkbox:checked ~ .modal-overlay {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    width: 400px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 2px #ddd;
+    transition: all 0.3s;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-content:hover {
+    border-color: #4669B0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+.AddCardCardContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.AddCardCardImg {
+    width: 94%;
+    object-fit: cover;
+    margin-bottom: 4%;
+}
+
+.CardInput {
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1.6vh;
+    transition: border-color 0.3s;
+    background-color: #f8f9fa;
+}
+
+.CardInput:focus {
+    outline: none;
+    border-color: #4669B0;
+    background-color: white;
+}
+
+.CardInput::placeholder {
+    color: #6c757d;
+}
+
+.AddCardCardButton {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #000033;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.8vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.AddCardCardButton:hover {
+    background-color: #3a5a9a;
+}
+
+/* Footer Styles */
+.Footer {
+    width: 100%;
+    min-height: 22vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.FooterButtonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    width: 98%;
+    margin-bottom: 2%;
+}
+
+.FooterButton {
+    background-color: transparent;
+    border: none;
+    color: #666;
+    font-size: 1.5vh;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.FooterButton:hover {
+    color: #000033;
+}
+
+.FooterText {
+    color: gray;
+    font-size: 1.4vh;
+    margin: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .SideBackgroundContainer {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .CardBlockCard {
+        width: 200%;
+    
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Header {
+        height: auto;
+        padding: 15px;
+    }
+
+    .HeaderLeft {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .HeaderLeftButtonContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .HeaderLogoButton {
+        font-size: 3vh;
+        margin-bottom: 10px;
+    }
+
+    .CardBlockH1 {
+        font-size: 3vh;
+    }
+
+    .CardBlockCard {
+        width: 200%;
+    }
+
+    .FooterButtonContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .CardBlock,
+    .AddCardContainer {
+        padding: 5% 0;
+    }
+
+    .CardBlockH1 {
+        font-size: 2.5vh;
+    }
+
+    .CardBlockCard {
+        width: 200%;
+    }
+
+    .CardBlockCardH1 {
+        font-size: 1.6vh;
+    }
+
+    .CardBlockCardText {
+        font-size: 1.4vh;
+    }
+
+    .AddCardButtonText {
+        font-size: 1.6vh;
+    }
+
+    .CardInput,
+    .AddCardCardButton {
+        font-size: 1.6vh;
+    }
+
+    .FooterButton {
+        font-size: 1.8vh;
+    }
+
+    .AddCardCardImg {
+        width: 70px;
+        height: 45px;
+    }
+}
