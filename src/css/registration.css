@@ -12,8 +12,6 @@ html, body {
 .wrapper {
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
     overflow: hidden;
 }
 
@@ -36,10 +34,6 @@ html, body {
 .AuthHeaderContainer{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding-left: 2%;
     padding-right: 4%;
 }
@@ -71,7 +65,7 @@ html, body {
 }
 
 .AuthHeaderRightButton{
-    width: 10vw;
+    width: 9vw;
     height: 100%;
     background-color: #000033;
     border-color: #000033;
@@ -143,7 +137,6 @@ html, body {
 }
 
 @media (max-width: 768px) {
-
     .AuthHeaderContainer {
         justify-content: space-around;
     }
@@ -167,12 +160,9 @@ html, body {
     .AuthHeaderRightButton {
         width: 100%;
     }
-
 }
 
 @media (max-width: 480px) {
-    
-   
     .SideBackgroundContainer{
         display: none;
         width: none;
@@ -209,5 +199,4 @@ html, body {
     .SignUpFormFormText {
         margin-left: 4%;
     }
-
 }

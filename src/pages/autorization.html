@@ -5,48 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Индекс Драйв</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/autorization.css">
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper d-flex flex-row">
         <div class="main">
-
-            <Header class="AuthHeader">
-                <div class="AuthHeaderContainer">   
-                    <a href="../index.html" class="AuthHeaderLogoButtonLink">
-                        <button class="AuthHeaderLogoButton">Главная</button>
+            <Header class="AuthHeader bg-white">
+                <div class="AuthHeaderContainer w-100 h-100 d-flex flex-row justify-content-between align-items-center px-3">   
+                    <a href="../index.html" class="AuthHeaderLogoButtonLink text-decoration-none">
+                        <button class="AuthHeaderLogoButton border-0 rounded text-white">Главная</button>
                     </a>
-                    <a href="./registration.html" class="AuthHeaderRightLink">
-                        <button class="AuthHeaderRightButton">Регистрация</button>
+                    <a href="./registration.html" class="AuthHeaderRightLink text-decoration-none">
+                        <button class="AuthHeaderRightButton border-0 rounded text-white">Регистрация</button>
                     </a>
                 </div>
             </Header>
             
-            <div class="SignInForm">
-                <form class="SignInFormForm">
-                    <h1 class="SignInFormH1">Вход в аккаунт</h1>
-                    <input class="SignInFormFormInput" placeholder="Телефон"/>
-                    <input class="SignInFormFormInput" placeholder="Пароль" type="password"/>
-                    <div class="SignInFormFormContainer">
-                        <div class="SignInFormFormCheckboxContainer">
+            <div class="SignInForm bg-white">
+                <form class="SignInFormForm d-flex flex-column align-items-center justify-content-center w-100">
+                    <h1 class="SignInFormH1 mb-4">Вход в аккаунт</h1>
+                    <input class="SignInFormFormInput border rounded" placeholder="Телефон"/>
+                    <input class="SignInFormFormInput border rounded" placeholder="Пароль" type="password"/>
+                    <div class="SignInFormFormContainer d-flex flex-row justify-content-between align-items-center">
+                        <div class="SignInFormFormCheckboxContainer d-flex align-items-center">
                             <input type="checkbox" class="SignInFormFormCheckbox" id="RememberMeCheckBox" name="RememberMe"/>
                             <label for="RememberMeCheckBox" class="SignInFormFormCheckboxLabel">Запомнить меня</label> 
                         </div>
-                        <button type="button" class="SignInFormFormForgotPasswordButton">Забыли пароль?</button>
+                        <button type="button" class="SignInFormFormForgotPasswordButton border-0 bg-white">Забыли пароль?</button>
                     </div>
-                    <a href="./profile.html" class="SignInFormFormLink">
-                        <button type="button" class="SignInFormFormButton">Войти</button>
+                    <a href="./profile.html" class="SignInFormFormLink text-decoration-none">
+                        <button type="button" class="SignInFormFormButton border-0 rounded text-white">Войти</button>
                     </a>
                 </form>
             </div>
         </div>
         <div class="SideBackgroundContainer">
-            <div class="SideBackground">
-                <div class="SideBackgroundImg"></div>
+            <div class="SideBackground w-100 h-100">
+                <div class="SideBackgroundImg w-100 h-100"></div>
             </div>
         </div>
     </div>
 </body>
-
 </html>
