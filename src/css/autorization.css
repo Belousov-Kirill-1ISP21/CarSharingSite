@@ -12,9 +12,7 @@ html, body {
 .wrapper {
     width: 100%;
     height: 100%;
-    overflow: hidden; 
-    display: flex;
-    flex-direction: row;  
+    overflow: hidden;
 }
 
 .main{
@@ -57,9 +55,6 @@ html, body {
 .SignInFormFormContainer{
     height: 4%;
     width: 44%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .SignInFormFormCheckbox{
@@ -91,14 +86,13 @@ html, body {
 }
 
 .SignInFormFormButton{
+    height: 8%;
+    width: 44%;
+    padding: 1vh;
+    text-align: center;
     background-color: #000033;
     border-color: #000033;
     color: white;
-    height: 8%;
-    width: 44%;
-    text-align: center;
-    padding: 1vh;
-    text-decoration: none;
 }
 
 .AuthHeader{
@@ -110,10 +104,6 @@ html, body {
 .AuthHeaderContainer{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding-left: 2%;
     padding-right: 4%;
 }
@@ -121,9 +111,8 @@ html, body {
 .AuthHeaderLogoButton{
     width: 12%;
     height: 44%;
-    text-align: center;
     padding: 1vh;
-    text-decoration: none;
+    text-align: center;
     background-color: #000033;
     border-color: #000033;
     text-align: center;
@@ -134,9 +123,8 @@ html, body {
 .AuthHeaderRightButton{
     width: 12%;
     height: 44%;
-    text-align: center;
     padding: 1vh;
-    text-decoration: none;
+    text-align: center;
     background-color: #000033;
     border-color: #000033;
     border-radius: 6px;
@@ -161,7 +149,6 @@ html, body {
 }
 
 @media (max-width: 1200px) {
-
     .AuthHeaderContainer {
         justify-content: space-around;
     }
@@ -185,11 +172,9 @@ html, body {
     .AuthHeaderRightButton {
         width: 100%;
     }
-
 }
 
 @media (max-width: 768px) {
-
     .AuthHeaderContainer {
         justify-content: space-around;
     }
@@ -213,7 +198,6 @@ html, body {
     .AuthHeaderRightButton {
         width: 100%;
     }
-
 
     .SignInFormFormContainer {
         width: 74%;
@@ -226,12 +210,9 @@ html, body {
     .SignInFormFormLink {
         width: 74%;
     }
-
 }
 
 @media (max-width: 480px) {
-    
-   
     .SideBackgroundContainer{
         display: none;
         width: none;
@@ -263,10 +244,6 @@ html, body {
 
     .SignInFormFormInput {
         width: 66vw;
-    }
-
-    .SignInFormFormText {
-        margin-left: 4%;
     }
 
     .SignInFormFormContainer {

@@ -12,8 +12,6 @@ html, body {
 .wrapper {
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
     overflow: hidden;
 }
 
@@ -36,41 +34,31 @@ html, body {
 .AuthHeaderContainer{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding-left: 2%;
     padding-right: 4%;
 }
 
 .AuthHeaderLogoButton{
-    width: 10vw;
-    height: 100%;
+    width: 12%;
+    height: 44%;
+    padding: 1vh;
+    text-align: center;
     background-color: #000033;
     border-color: #000033;
     text-align: center;
     color: white;
     border-radius: 6px;
-    width: 12%;
-    height: 44%;
-    text-align: center;
-    padding: 1vh;
-    text-decoration: none;
 }
 
 .AuthHeaderRightButton{
-    width: 10vw;
-    height: 100%;
+    width: 12%;
+    height: 44%;
+    padding: 1vh;
+    text-align: center;
     background-color: #000033;
     border-color: #000033;
     border-radius: 6px;
     color: white;
-    width: 12%;
-    height: 44%;
-    text-align: center;
-    padding: 1vh;
-    text-decoration: none;
 }
 
 .SideBackground {
@@ -117,16 +105,20 @@ html, body {
     color: #9E9E9E;
 }
 
+.SignUpFormFormLink{
+    height: 8%;
+    width: 44%;
+}
+
 .SignUpFormFormButton{
+    height: 8%;
+    width: 44%;
+    padding: 1vh;
+    text-align: center;
     background-color: #000033;
     border-color: #000033;
     color: white;
     border-radius: 6px;
-    height: 8%;
-    width: 44%;
-    text-align: center;
-    padding: 1vh;
-    text-decoration: none;
 }
 
 .SignUpFormFormText{
@@ -135,7 +127,6 @@ html, body {
 }
 
 @media (max-width: 768px) {
-
     .AuthHeaderContainer {
         justify-content: space-around;
     }
@@ -159,12 +150,9 @@ html, body {
     .AuthHeaderRightButton {
         width: 100%;
     }
-
 }
 
 @media (max-width: 480px) {
-    
-   
     .SideBackgroundContainer{
         display: none;
         width: none;
@@ -201,5 +189,4 @@ html, body {
     .SignUpFormFormText {
         margin-left: 4%;
     }
-
 }

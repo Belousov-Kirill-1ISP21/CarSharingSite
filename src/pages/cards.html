@@ -1,121 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru" data-theme="dark">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Индекс Драйв</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/cards.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="SideBackgroundContainer">
-            <div class="SideBackground">
-                <div class="SideBackgroundImg"></div>
+    <div class="wrapper d-flex flex-row">
+        <div class="SideBackgroundContainer position-fixed start-0 top-0 h-100 w-13">
+            <div class="SideBackground h-100 w-100 overflow-hidden">
+                <div class="SideBackgroundImg h-100 w-100"></div>
             </div>
         </div>
 
-        <div class="main">
-            <header class="Header">
-                <div class="HeaderLeft">
-                    <a href="../index.html" class="HeaderLogoButton HeaderLeftLink">Индекс Драйв</a>
-
-                    <div class="HeaderLeftButtonContainer">
-                        <a href="./order.html" class="HeaderLeftButton HeaderLeftButtonContainerLink">Бронирование</a>
-                        <a href="./offices.html" class="HeaderLeftButton HeaderLeftButtonContainerLink">Филиалы</a>
+        <div class="main d-flex flex-column w-87 ms-13">
+            <header class="Header w-100 mb-1 d-flex align-items-center justify-content-between px-2">
+                <div class="HeaderLeft d-flex align-items-center flex-1 pe-4">
+                    <a href="../index.html" class="HeaderLogoButton bg-white border-0 text-start fs-4vh me-4 text-decoration-none fw-bold text-dark">
+                        Индекс Драйв
+                    </a>
+                    
+                    <div class="HeaderLeftButtonContainer d-flex align-items-center gap-4 flex-1 justify-content-end">
+                        <a href="./order.html" class="HeaderLeftButton bg-white border-0 text-gray fs-1-4vh px-3 py-2 text-decoration-none">
+                            Бронирование
+                        </a>
+                        <a href="./offices.html" class="HeaderLeftButton bg-white border-0 text-gray fs-1-4vh px-3 py-2 text-decoration-none">
+                            Филиалы
+                        </a>
                     </div>
                 </div>
-
-                <div class="HeaderRight">
-                    <a href="./registration.html" class="HeaderRightButton HeaderRightLink">Личный кабинет</a>
+        
+                <div class="HeaderRight d-flex align-items-center">
+                    <a href="./registration.html" class="HeaderRightButton bg-purple border-0 rounded text-white fs-1-5vh px-4 py-2 text-decoration-none">
+                        Личный кабинет
+                    </a>
                 </div>
             </header>
 
-            <div class="CardBlockH1Container">
-                <h1 class="CardBlockH1">Банковские карты</h1>
+            <div class="CardBlockH1Container text-center mb-3 w-100">
+                <h1 class="CardBlockH1 fs-4vh fw-semibold text-dark">Банковские карты</h1>
             </div>
 
-            <div class="CardsBlock">
-                <div class="CardBlock">
-                    <div class="CardBlockContainer">
-                        <div class="CardBlockCard">
-                            <div class="CardBlockCardContainer">
-                                <img src="../assets/Cards/VISA.png" class="CardBlockCardImg" alt="VISA">
+            <div class="CardsBlock d-flex flex-row align-items-center">
+                <div class="CardBlock d-flex flex-column align-items-center py-5 h-100 w-44">
+                    <div class="CardBlockContainer d-flex flex-column justify-content-center flex-wrap gap-3 mb-5 w-44">
+                        <div class="CardBlockCard my-2 w-350 min-h-200 rounded d-flex flex-column align-items-center justify-content-between p-2 shadow position-relative overflow-hidden">
+                            <div class="CardBlockCardContainer w-100 d-flex justify-content-between align-items-center my-2 z-1">
+                                <img src="../assets/Cards/VISA.png" class="CardBlockCardImg object-fit-cover w-inherit" alt="VISA">
                             </div>
-                            <div class="CardBlockCardContainer">
-                                <h1 class="CardBlockCardH1">**** **** **** 4444</h1>
-                                <p class="CardBlockCardText">Активна</p>
+                            <div class="CardBlockCardContainer w-100 d-flex flex-row justify-content-around align-items-center my-2 z-1">
+                                <h1 class="CardBlockCardH1 fs-1-8vh fw-semibold letter-spacing-2 text-dark">**** **** **** 4444</h1>
+                                <p class="CardBlockCardText fs-1-6vh rounded-pill px-3 py-1 text-dark">Активна</p>
                             </div>
-                            <div class="CardBlockCardContainer">
-                                <button class="CardBlockCardButton">Удалить карту</button>
+                            <div class="CardBlockCardContainer w-100 d-flex justify-content-center align-items-center z-1">
+                                <button class="CardBlockCardButton w-80 h-45 text-white bg-dark-blue border-0 rounded fs-1-6vh fw-semibold">Удалить карту</button>
                             </div>
                         </div>
 
-                        <div class="CardBlockCard">
-                            <div class="CardBlockCardContainer">
-                                <img src="../assets/Cards/World.png" class="CardBlockCardImg" alt="Мир">
+                        <div class="CardBlockCard my-2 w-350 min-h-200 rounded d-flex flex-column align-items-center justify-content-between p-2 shadow position-relative overflow-hidden">
+                            <div class="CardBlockCardContainer w-100 d-flex justify-content-between align-items-center my-2 z-1">
+                                <img src="../assets/Cards/World.png" class="CardBlockCardImg object-fit-cover w-inherit" alt="Мир">
                             </div>
-                            <div class="CardBlockCardContainer">
-                                <h1 class="CardBlockCardH1">**** **** **** 4444</h1>
-                                <p class="CardBlockCardText">Активна</p>
+                            <div class="CardBlockCardContainer w-100 d-flex flex-row justify-content-around align-items-center my-2 z-1">
+                                <h1 class="CardBlockCardH1 fs-1-8vh fw-semibold letter-spacing-2 text-dark">**** **** **** 4444</h1>
+                                <p class="CardBlockCardText fs-1-6vh rounded-pill px-3 py-1 text-dark">Активна</p>
                             </div>
-                            <div class="CardBlockCardContainer">
-                                <button class="CardBlockCardButton">Удалить карту</button>
+                            <div class="CardBlockCardContainer w-100 d-flex justify-content-center align-items-center z-1">
+                                <button class="CardBlockCardButton w-80 h-45 text-white bg-dark-blue border-0 rounded fs-1-6vh fw-semibold">Удалить карту</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="AddCardContainer">
-                    <!-- Чекбокс для управления модальным окном -->
+                <div class="AddCardContainer d-flex flex-column align-items-center py-5 w-55 h-100">
                     <input type="checkbox" id="modal-toggle" class="modal-checkbox">
                     
-                    <!-- Кнопка для открытия модального окна -->
-                    <label for="modal-toggle" class="AddCardButton">
-                        <span class="AddCardButtonText">Добавить карту</span>
-                        <img src="../assets/General/ArrowDown.png" class="AddCardButtonImg" alt="Стрелка">
+                    <label for="modal-toggle" class="AddCardButton bg-white border-0 rounded px-4 py-3 d-flex gap-3 mb-1 ms-18 shadow-blue">
+                        <span class="AddCardButtonText fs-1-8vh fw-semibold m-0">Добавить карту</span>
+                        <img src="../assets/General/ArrowDown.png" class="AddCardButtonImg w-20 h-60 mt-2" alt="Стрелка">
                     </label>
 
-                    <!-- Модальное окно -->
                     <div class="modal-overlay">
-                        <div class="modal-content">
-                            <!-- Кнопка закрытия -->
-                            <label for="modal-toggle" class="modal-close">×</label>
+                        <div class="modal-content bg-white rounded border-2 d-flex flex-column align-items-center p-4 position-relative max-h-90-vh overflow-y-auto w-400">
+                            <label for="modal-toggle" class="modal-close position-absolute top-15 right-15 border-0 fs-6 text-gray">×</label>
                             
-                            <div class="AddCardCardContainer">
-                                <img src="../assets/Cards/MasterCard.png" class="AddCardCardImg" alt="MasterCard">
-                            </div>
-                            <div class="AddCardCardContainer">
-                                <input class="CardInput" placeholder="Номер карты">
-                                <input class="CardInput" placeholder="CVV">
-                                <input class="CardInput" placeholder="Фамилия">
-                                <input class="CardInput" placeholder="Имя">
-                                <input class="CardInput" placeholder="Дата окончания">
-                                <button class="AddCardCardButton">Добавить карту</button>
+                            <div class="AddCardCardContainer w-100 d-flex flex-column align-items-center gap-3">
+                                <img src="../assets/Cards/MasterCard.png" class="AddCardCardImg object-fit-cover w-94 mb-4" alt="MasterCard">
+                                <input class="CardInput w-100 h-45 px-3 border-2 border-light rounded bg-light-gray fs-1-6vh" placeholder="Номер карты">
+                                <input class="CardInput w-100 h-45 px-3 border-2 border-light rounded bg-light-gray fs-1-6vh" placeholder="CVV">
+                                <input class="CardInput w-100 h-45 px-3 border-2 border-light rounded bg-light-gray fs-1-6vh" placeholder="Фамилия">
+                                <input class="CardInput w-100 h-45 px-3 border-2 border-light rounded bg-light-gray fs-1-6vh" placeholder="Имя">
+                                <input class="CardInput w-100 h-45 px-3 border-2 border-light rounded bg-light-gray fs-1-6vh" placeholder="Дата окончания">
+                                <button class="AddCardCardButton w-100 h-50 text-white bg-dark-blue border-0 rounded fs-1-8vh fw-semibold mt-3">Добавить карту</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <footer class="Footer">
-                <div class="FooterButtonContainer">
-                    <a href="../index.html" class="FooterButton FooterButtonContainerLink">Главная</a>
-                    <a href="../pages/cards.html" class="FooterButton FooterButtonContainerLink">Банковские карты</a>
-                    <a href="../pages/catalog.html" class="FooterButton FooterButtonContainerLink">Каталог</a>
-                    <a href="../pages/profile.html" class="FooterButton FooterButtonContainerLink">Личный кабинет</a>
-                    <a href="../pages/registration.html" class="FooterButton FooterButtonContainerLink">Регистрация</a>
-                    <a href="../pages/autorization.html" class="FooterButton FooterButtonContainerLink">Авторизация</a>
-                    <a href="../pages/history.html" class="FooterButton FooterButtonContainerLink">История бронирований</a>
-                    <a href="../pages/order.html" class="FooterButton FooterButtonContainerLink">Бронирование</a>
-                    <a href="../pages/offices.html" class="FooterButton FooterButtonContainerLink">Филиалы</a>
-                    <span class="FooterButton">Контакты: <b>8 800 535 35 35</b></span>
+            <footer class="Footer w-100 min-vh-22 d-flex flex-column justify-content-center align-items-center py-4">
+                <div class="FooterButtonContainer d-flex flex-wrap justify-content-center gap-2 w-98 mb-2">
+                    <a href="../index.html" class="FooterButton bg-transparent border-0 text-gray fs-1-5vh px-3 py-2 text-decoration-none">
+                        Главная
+                    </a>
+                    <a href="../pages/cards.html" class="FooterButton bg-transparent border-0 text-gray fs-1-5vh px-3 py-2 text-decoration-none">
+                        Банковские карты
+                    </a>
+                    <a href="../pages/catalog.html" class="FooterButton bg-transparent border-0 text-gray fs-1-5vh px-3 py-2 text-decoration-none">
+                        Каталог
+                    </a>
+                    <a href="../pages/profile.html" class="FooterButton bg-transparent border-0 text-gray fs-1-5vh px-3 py-2 text-decoration-none">
+                        Личный кабинет
+                    </a>
+                    <a href="../pages/registration.html" class="FooterButton bg-transparent border-0 text-gray fs-1-5vh px-3 py-2 text-decoration-none">
+                        Регистрация
+                    </a>
+                    <a href="../pages/autorization.html" class="FooterButton bg-transparent border-0 text-gray fs-1-5vh px-3 py-2 text-decoration-none">
+                        Авторизация
+                    </a>
+                    <a href="../pages/history.html" class="FooterButton bg-transparent border-0 text-gray fs-1-5vh px-3 py-2 text-decoration-none">
+                        История бронирований
+                    </a>
+                    <a href="../pages/order.html" class="FooterButton bg-transparent border-0 text-gray fs-1-5vh px-3 py-2 text-decoration-none">
+                        Бронирование
+                    </a>
+                    <a href="../pages/offices.html" class="FooterButton bg-transparent border-0 text-gray fs-1-5vh px-3 py-2 text-decoration-none">
+                        Филиалы
+                    </a>
+                    <span class="FooterButton bg-transparent border-0 text-gray fs-1-5vh px-3 py-2">Контакты: <b>8 800 535 35 35</b></span>
                 </div>
-
-                <p class="FooterText">©2025 Страхование онлаин</p>
+        
+                <p class="FooterText text-gray fs-1-4vh m-0">©2025 Страхование онлаин</p>
             </footer>
         </div>
     </div>
+
 </body>
 </html>
