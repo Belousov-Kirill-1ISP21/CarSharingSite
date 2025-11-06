@@ -1,188 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Индекс Драйв</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/history.css">
-</head>
 
-<body>
-    <div class="wrapper">
-        <div class="SideBackgroundContainer">
-            <div class="SideBackground">
-                <div class="SideBackgroundImg"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Индекс Драйв</title>
+        <link rel="stylesheet" href="../css/history.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="SideBackgroundContainer">
+                <div class="SideBackground">
+                    <div class="SideBackgroundImg"></div>
+                </div>
             </div>
-        </div>
-
-        <div class="main">
-            <Header class="Header">
-                <div class="HeaderLeft">
-                    <button class="HeaderLogoButton">
-                        <a href="../index.html" class="HeaderLeftLink">Индекс Драйв</a>
-                    </button>
-                    
-                    <div class="HeaderLeftButtonContainer">
-                        <button class="HeaderLeftButton">
-                            <a href="./order.html" class="HeaderLeftButtonContainerLink">Бронирование</a>
-                        </button>
-                        <button class="HeaderLeftButton">
-                            <a href="./offices.html" class="HeaderLeftButtonContainerLink">Филиалы</a>
-                        </button>
-                    </div>
-                </div>
-        
-                <div class="HeaderRight">
-                    <a href="./registration.html" class="HeaderRightLink">
-                        <button class="HeaderRightButton">Личный кабинет</button>
-                    </a>
-                </div>
-            </Header>
-
-            <div class="HistoryBlock">
-                <div class="HistoryBlockH1Container">
-                    <h1 class="HistoryBlockH1">История бронирования</h1>
-                </div>             
     
-                <div class="HistoryBlockContainer">
-                    <div class="HistoryBlockCard">
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Код бронирования: <b>4</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Номер заказа: <b>4444</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Дата начала аренды: <b>04.04.2004</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Дата окончания аренды: <b>08.04.2004</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <img src="../assets/General/Car.png" class="CatalogBlockCardImg">
-                        </div>
-                        <div class="HistoryBlockCardContainer">
-                            <h1 class="HistoryBlockCardH1">5-2-toyota</h1>
-                            <p class="HistoryBlockCardText"><b>1000</b>Руб/день</p> 
-                        </div>
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Итоговое количество дней аренды: <b>4</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Итоговая стоимость аренды: <b>4444</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <a href="./order.html" class="HistoryBlockCardContainerLink">
-                                <button class="HistoryBlockCardButton">Арендовать повторно</button>
-                            </a>
+            <div class="main">
+    
+                <header class="Header" id="Header">
+                    <div class="HeaderLeft">
+                        <a href="../index.html" class="HeaderLogoButton HeaderLeftLink">Индекс Драйв</a>
+                        
+                        <div class="HeaderLeftButtonContainer">
+                            <a href="./order.html" class="HeaderLeftButton HeaderLeftButtonContainerLink">Бронирование</a>
+                            <a href="./offices.html" class="HeaderLeftButton HeaderLeftButtonContainerLink">Филиалы</a>
                         </div>
                     </div>
-
-                    <div class="HistoryBlockCard">
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Код бронирования: <b>4</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Номер заказа: <b>4444</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Дата начала аренды: <b>04.04.2004</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Дата окончания аренды: <b>08.04.2004</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <img src="../assets/General/Car.png" class="CatalogBlockCardImg">
-                        </div>
-                        <div class="HistoryBlockCardContainer">
-                            <h1 class="HistoryBlockCardH1">5-2-toyota</h1>
-                            <p class="HistoryBlockCardText"><b>1000</b>Руб/день</p> 
-                        </div>
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Итоговое количество дней аренды: <b>4</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Итоговая стоимость аренды: <b>4444</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <a href="./order.html" class="HistoryBlockCardContainerLink">
-                                <button class="HistoryBlockCardButton">Арендовать повторно</button>
-                            </a>
-                        </div>
+            
+                    <div class="HeaderRight">
+                        <a href="./registration.html" class="HeaderRightButton HeaderRightLink">Личный кабинет</a>
                     </div>
-
-                    <div class="HistoryBlockCard">
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Код бронирования: <b>4</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Номер заказа: <b>4444</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Дата начала аренды: <b>04.04.2004</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Дата окончания аренды: <b>08.04.2004</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <img src="../assets/General/Car.png" class="CatalogBlockCardImg">
-                        </div>
-                        <div class="HistoryBlockCardContainer">
-                            <h1 class="HistoryBlockCardH1">5-2-toyota</h1>
-                            <p class="HistoryBlockCardText"><b>1000</b>Руб/день</p> 
-                        </div>
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Итоговое количество дней аренды: <b>4</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <p class="HistoryBlockCardText">Итоговая стоимость аренды: <b>4444</b></p> 
-                        </div> 
-                        <div class="HistoryBlockCardContainer">
-                            <a href="./order.html" class="HistoryBlockCardContainerLink">
-                                <button class="HistoryBlockCardButton">Арендовать повторно</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <Footer class="Footer">
-                <div class="FooterButtonContainer">
-                    <button class="FooterButton">
-                        <a href="../index.html" class="FooterButtonContainerLink">Главная</a>
-                    </button>
-                    <button class="FooterButton">
-                        <a href="../pages/cards.html" class="FooterButtonContainerLink">Банковские карты</a>
-                    </button>
-                    <button class="FooterButton">
-                        <a href="../pages/catalog.html" class="FooterButtonContainerLink">Каталог</a>
-                    </button>
-                    <button class="FooterButton">
-                        <a href="../pages/profile.html" class="FooterButtonContainerLink">Личный кабинет</a>
-                    </button>
-                    <button class="FooterButton">
-                        <a href="../pages/registration.html" class="FooterButtonContainerLink">Регистрация</a>
-                    </button>
-                    <button class="FooterButton">
-                        <a href="../pages/autorization.html" class="FooterButtonContainerLink">Авторизация</a>
-                    </button>
-                    <button class="FooterButton">
-                        <a href="../pages/history.html" class="FooterButtonContainerLink">История бронирований</a>
-                    </button>
-                    <button class="FooterButton">
-                        <a href="../pages/order.html" class="FooterButtonContainerLink">Бронирование</a>
-                    </button>
-                    <button class="FooterButton">
-                        <a href="../pages/offices.html" class="FooterButtonContainerLink">Филиалы</a>
-                    </button>
-                    <button class="FooterButton">Контакты: <b>8 800 535 35 35</b></button>
-                </div>
+                </header>
+    
+                <div class="HistoryBlock">
+                    <div class="HistoryBlockH1Container">
+                        <h1 class="HistoryBlockH1">История бронирования</h1>
+                    </div>             
         
-                <p class="FooterText">©2025 Страхование онлаин</p>
-            </Footer>
-        </div>
-    </div>
+                    <div class="HistoryBlockContainer">
 
-</body>
+                        <div class="HistoryBlockCard">
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Код бронирования: <b>4</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Номер заказа: <b>4444</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Дата начала аренды: <b>04.04.2004</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Дата окончания аренды: <b>08.04.2004</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <img src="../assets/General/Car.png" class="CatalogBlockCardImg" alt="Автомобиль">
+                            </div>
+                            <div class="HistoryBlockCardContainer">
+                                <h1 class="HistoryBlockCardH1">5-2-toyota</h1>
+                                <p class="HistoryBlockCardText"><b>1000</b>Руб/день</p> 
+                            </div>
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Итоговое количество дней аренды: <b>4</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Итоговая стоимость аренды: <b>4444</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <a href="./order.html" class="HistoryBlockCardButton HistoryBlockCardContainerLink">
+                                    Арендовать повторно
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="HistoryBlockCard">
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Код бронирования: <b>4</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Номер заказа: <b>4444</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Дата начала аренды: <b>04.04.2004</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Дата окончания аренды: <b>08.04.2004</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <img src="../assets/General/Car.png" class="CatalogBlockCardImg" alt="Автомобиль">
+                            </div>
+                            <div class="HistoryBlockCardContainer">
+                                <h1 class="HistoryBlockCardH1">5-2-toyota</h1>
+                                <p class="HistoryBlockCardText"><b>1000</b>Руб/день</p> 
+                            </div>
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Итоговое количество дней аренды: <b>4</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Итоговая стоимость аренды: <b>4444</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <a href="./order.html" class="HistoryBlockCardButton HistoryBlockCardContainerLink">
+                                    Арендовать повторно
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="HistoryBlockCard">
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Код бронирования: <b>4</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Номер заказа: <b>4444</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Дата начала аренды: <b>04.04.2004</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Дата окончания аренды: <b>08.04.2004</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <img src="../assets/General/Car.png" class="CatalogBlockCardImg" alt="Автомобиль">
+                            </div>
+                            <div class="HistoryBlockCardContainer">
+                                <h1 class="HistoryBlockCardH1">5-2-toyota</h1>
+                                <p class="HistoryBlockCardText"><b>1000</b>Руб/день</p> 
+                            </div>
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Итоговое количество дней аренды: <b>4</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <p class="HistoryBlockCardText">Итоговая стоимость аренды: <b>4444</b></p> 
+                            </div> 
+                            <div class="HistoryBlockCardContainer">
+                                <a href="./order.html" class="HistoryBlockCardButton HistoryBlockCardContainerLink">
+                                    Арендовать повторно
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <footer class="Footer">
+        
+                    <div class="FooterButtonContainer">
+                        <a href="../index.html" class="FooterButton FooterButtonContainerLink">Главная</a>
+                        <a href="../pages/cards.html" class="FooterButton FooterButtonContainerLink">Банковские карты</a>
+                        <a href="../pages/catalog.html" class="FooterButton FooterButtonContainerLink">Каталог</a>
+                        <a href="../pages/profile.html" class="FooterButton FooterButtonContainerLink">Личный кабинет</a>
+                        <a href="../pages/registration.html" class="FooterButton FooterButtonContainerLink">Регистрация</a>
+                        <a href="../pages/autorization.html" class="FooterButton FooterButtonContainerLink">Авторизация</a>
+                        <a href="../pages/history.html" class="FooterButton FooterButtonContainerLink">История бронирований</a>
+                        <a href="../pages/order.html" class="FooterButton FooterButtonContainerLink">Бронирование</a>
+                        <a href="../pages/offices.html" class="FooterButton FooterButtonContainerLink">Филиалы</a>
+                        <span class="FooterButton">Контакты: <b>8 800 535 35 35</b></span>
+                    </div>
+            
+                    <p class="FooterText">©2025 Страхование онлаин</p>
+                </footer>
+    
+            </div>
+        </div>
+    </body>
+
 </html>

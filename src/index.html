@@ -5,240 +5,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Индекс Драйв</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <div class="wrapper d-flex flex-column bg-white min-vh-100">
+    <div class="wrapper">
 
-        <Header class="Header w-100 mb-2 d-flex align-items-center justify-content-between px-3">
-            <div class="HeaderLeft d-flex align-items-center pe-4">
-                <button class="HeaderLogoButton bg-white border-0 text-start me-4">
-                    <a href="./index.html" class="HeaderLeftLink text-decoration-none fw-bold text-dark">Индекс Драйв</a>
-                </button>
+        <header class="Header">
+            <div class="HeaderLeft">
+                <a href="./index.html" class="HeaderLogoButton HeaderLeftLink">Индекс Драйв</a>
                 
-                <div class="HeaderLeftButtonContainer d-flex align-items-center justify-content-end">
-                    <button class="HeaderLeftButton bg-white border-0 text-secondary px-3 py-2">
-                        <a href="./pages/order.html" class="HeaderLeftButtonContainerLink text-decoration-none text-secondary">Бронирование</a>
-                    </button>
-
-                    <button class="HeaderLeftButton bg-white border-0 text-secondary px-3 py-2">
-                        <a href="./pages/offices.html" class="HeaderLeftButtonContainerLink text-decoration-none text-secondary">Филиалы</a>
-                    </button>
+                <div class="HeaderLeftButtonContainer">
+                    <a href="./pages/order.html" class="HeaderLeftButton HeaderLeftButtonContainerLink">Бронирование</a>
+                    <a href="./pages/offices.html" class="HeaderLeftButton HeaderLeftButtonContainerLink">Филиалы</a>
                 </div>
-            </div>
-
-            <div class="HeaderRight d-flex align-items-center">
-                <a href="./pages/registration.html" class="HeaderRightLink text-decoration-none">
-                    <button class="HeaderRightButton border-0 rounded text-white px-4 py-2">Личный кабинет</button>
-                </a>
-            </div>
-        </Header>
-
-        <div class="TitleBlock w-100 d-flex">
-            <img src="./assets/Home/TitleBlock.png" class="TitleBlockImg w-50" alt="Главное изображение"/> 
-            <div class="TitleBlockContainer w-50 d-flex flex-column justify-content-center align-items-start px-5">
-                <h1 class="TitleBlockH1 text-white mb-3 text-start">Аренда автомобилей</h1>
-                <p class="TitleBlockText text-white mb-4 text-start">На любой случай, любой автомобиль.</p>
-                
-                <a href="./pages/catalog.html" class="TitleBlockLink text-decoration-none">
-                    <button class="TitleBlockButton border-0 text-white px-4 py-3 d-flex align-items-center gap-3 rounded">
-                        <p class="TitleBlockButtonText m-0">Арендовать</p>
-                        <img src="./assets/Home/Arrow.png" class="TitleBlockButtonImg" alt="Стрелка"/>
-                    </button>
-                </a>
-            </div>
-        </div>
-
-        <div class="WhyUsBlock w-100 text-center py-5">
-            <div class="WhyUsBlockHeader mb-5">
-                <h1 class="WhyUsBlockHeaderH1 mb-3 text-dark">Почему доверяют</h1>
-                <p class="WhyUsBlockHeaderText text-secondary m-0">Более</p> 
-                <p class="WhyUsBlockHeaderTextInText mx-2 fw-bold">10 000</p> 
-                <p class="WhyUsBlockHeaderText text-secondary m-0">клиентов доверили нашему агентству аренду транспортных средств</p>
             </div>
     
-            <div class="WhyUsBlockContainer d-flex justify-content-center flex-wrap px-5">
-                <div class="WhyUsBlockCard bg-white rounded-3 p-4 shadow-sm">
-                    <img src="./assets/Home/Like.png" class="WhyUsBlockCardImg mb-4" alt="Проценты"/> 
-                    <h1 class="WhyUsBlockCardH1 my-4 text-dark">Помощь при ДТП</h1>
-                    <p class="WhyUsBlockCardText text-secondary">Если у вас случилось ДТП - просто позвоните нам и мы подскажем порядок действий</p>
+            <div class="HeaderRight">
+                <a href="./pages/registration.html" class="HeaderRightButton HeaderRightLink">Личный кабинет</a>
+            </div>
+        </header>
+
+        <div class="TitleBlock">
+            <img src="./assets/Home/TitleBlock.png" class="TitleBlockImg" alt="Главное изображение"> 
+            <div class="TitleBlockContainer">
+                <h1 class="TitleBlockH1">Аренда автомобилей</h1>
+                <p class="TitleBlockText">На любой случай, любой автомобиль.</p>
+                
+                <a href="./pages/catalog.html" class="TitleBlockButton TitleBlockLink">
+                    <span class="TitleBlockButtonText">Арендовать</span>
+                    <img src="./assets/Home/Arrow.png" class="TitleBlockButtonImg" alt="Стрелка">
+                </a>
+            </div>
+        </div>
+
+        <div class="WhyUsBlock">
+            <div class="WhyUsBlockHeader">
+                <h1 class="WhyUsBlockHeaderH1">Почему доверяют</h1>
+                <p class="WhyUsBlockHeaderText">Более</p> 
+                <p class="WhyUsBlockHeaderTextInText">10 000</p> 
+                <p class="WhyUsBlockHeaderText">клиентов доверили нашему агентству аренду транспортных средств</p>
+            </div>
+    
+            <div class="WhyUsBlockContainer">
+                <div class="WhyUsBlockCard">
+                    <img src="./assets/Home/Like.png" class="WhyUsBlockCardImg" alt="Проценты"> 
+                    <h1 class="WhyUsBlockCardH1">Помощь при ДТП</h1>
+                    <p class="WhyUsBlockCardText">Если у вас случилось ДТП - просто позвоните нам и мы подскажем порядок действий</p>
                 </div>
 
-                <div class="WhyUsBlockCard bg-white rounded-3 p-4 shadow-sm">
-                    <img src="./assets/Home/Like.png" class="WhyUsBlockCardImg mb-4" alt="Проценты"/> 
-                    <h1 class="WhyUsBlockCardH1 my-4 text-dark">Юридическое сопровождение</h1>
-                    <p class="WhyUsBlockCardText text-secondary">Представительство в суде, юридические консультации даже по сымым сложным вопросам</p>
+                <div class="WhyUsBlockCard">
+                    <img src="./assets/Home/Like.png" class="WhyUsBlockCardImg" alt="Проценты"> 
+                    <h1 class="WhyUsBlockCardH1">Юридическое сопровождение</h1>
+                    <p class="WhyUsBlockCardText">Представительство в суде, юридические консультации даже по сымым сложным вопросам</p>
                 </div>
 
-                <div class="WhyUsBlockCard bg-white rounded-3 p-4 shadow-sm">
-                    <img src="./assets/Home/Like.png" class="WhyUsBlockCardImg mb-4" alt="Проценты"/> 
-                    <h1 class="WhyUsBlockCardH1 my-4 text-dark">Скидки постоянным клиентам</h1>
-                    <p class="WhyUsBlockCardText text-secondary">Накопительная система скидок. Получите выгоду до 80%</p>
+                <div class="WhyUsBlockCard">
+                    <img src="./assets/Home/Like.png" class="WhyUsBlockCardImg" alt="Проценты"> 
+                    <h1 class="WhyUsBlockCardH1">Скидки постоянным клиентам</h1>
+                    <p class="WhyUsBlockCardText">Накопительная система скидок. Получите выгоду до 80%</p>
                 </div>
 
-                <div class="WhyUsBlockCard bg-white rounded-3 p-4 shadow-sm">
-                    <img src="./assets/Home/Like.png" class="WhyUsBlockCardImg mb-4" alt="Проценты"/> 
-                    <h1 class="WhyUsBlockCardH1 my-4 text-dark">Гибкие условия</h1>
-                    <p class="WhyUsBlockCardText text-secondary">Возможность выбора удобного автомобиля, места, времени, даты</p>
+                <div class="WhyUsBlockCard">
+                    <img src="./assets/Home/Like.png" class="WhyUsBlockCardImg" alt="Проценты"> 
+                    <h1 class="WhyUsBlockCardH1">Гибкие условия</h1>
+                    <p class="WhyUsBlockCardText">Возможность выбора удобного автомобиля, места, времени, даты</p>
                 </div>
             </div>
         </div>
 
-        <div class="CatalogBlock w-100 d-flex flex-column align-items-center py-5">
-            <div class="CatalogBlockHead w-100 d-flex justify-content-center align-items-center mb-5 flex-wrap">
-                <select class="CatalogBlockSelect p-3 border rounded bg-white">
+        <div class="CatalogBlock">
+            <div class="CatalogBlockHead">
+                <select class="CatalogBlockSelect">
                     <option class="CatalogBlockOption">Выберите класс автомобиля</option>
                     <option class="CatalogBlockOption">Бизнес-класс</option>
                     <option class="CatalogBlockOption">Эконом-класс</option>
                 </select>
-                <select class="CatalogBlockSelect p-3 border rounded bg-white">
+                <select class="CatalogBlockSelect">
                     <option class="CatalogBlockOption">Выберите марку автомобиля</option>
                     <option class="CatalogBlockOption">Марка 1</option>
                     <option class="CatalogBlockOption">Марка 2</option>
                 </select>
-                <select class="CatalogBlockSelect p-3 border rounded bg-white">
+                <select class="CatalogBlockSelect">
                     <option class="CatalogBlockOption">Выберите модель автомобиля</option>
                     <option class="CatalogBlockOption">Модель 1</option>
                     <option class="CatalogBlockOption">Модель 2</option>
                 </select>
 
-                <button class="CatalogBlockHeadButton border-0 text-white px-4 py-3 rounded">Поиск</button>
+                <button class="CatalogBlockHeadButton">Поиск</button>
             </div>
     
-            <div class="CatalogBlockContainer d-flex justify-content-center flex-wrap w-90">
-                <div class="CatalogBlockCard bg-white rounded-3 p-4 m-2 shadow-sm">
-                    <div class="CatalogBlockCardContainer my-4 text-center d-flex flex-row justify-content-between">
-                        <img src="./assets/General/Car.png" class="CatalogBlockCardImg w-100">
+            <div class="CatalogBlockContainer">
+                <div class="CatalogBlockCard">
+                    <div class="CatalogBlockCardContainer">
+                        <img src="./assets/General/Car.png" class="CatalogBlockCardImg" alt="Автомобиль">
                     </div>
-                    <div class="CatalogBlockCardContainer my-4 text-center d-flex flex-row justify-content-between">
-                        <h1 class="CatalogBlockCardH1 m-0 text-dark">5-2-toyota</h1>
-                        <p class="CatalogBlockCardText m-0 text-dark"><b>1000</b>Руб/день</p> 
+                    <div class="CatalogBlockCardContainer">
+                        <h1 class="CatalogBlockCardH1">5-2-toyota</h1>
+                        <p class="CatalogBlockCardText"><b>1000</b>Руб/день</p> 
                     </div>
                     
-                    <a href="./pages/catalog.html" class="CatalogBlockCardContainerLink text-decoration-none">
-                        <button class="CatalogBlockCardButton w-100 border-0 text-white p-3 rounded">Заказать</button>
+                    <a href="./pages/catalog.html" class="CatalogBlockCardButton CatalogBlockCardContainerLink">
+                        Заказать
                     </a>
                 </div>
 
-                <div class="CatalogBlockCard bg-white rounded-3 p-4 m-2 shadow-sm">
-                    <div class="CatalogBlockCardContainer my-4 text-center d-flex flex-row justify-content-between">
-                        <img src="./assets/General/Car.png" class="CatalogBlockCardImg w-100">
+                <div class="CatalogBlockCard">
+                    <div class="CatalogBlockCardContainer">
+                        <img src="./assets/General/Car.png" class="CatalogBlockCardImg" alt="Автомобиль">
                     </div>
-                    <div class="CatalogBlockCardContainer my-4 text-center d-flex flex-row justify-content-between">
-                        <h1 class="CatalogBlockCardH1 m-0 text-dark">5-2-toyota</h1>
-                        <p class="CatalogBlockCardText m-0 text-dark"><b>1000</b>Руб/день</p> 
+                    <div class="CatalogBlockCardContainer">
+                        <h1 class="CatalogBlockCardH1">5-2-toyota</h1>
+                        <p class="CatalogBlockCardText"><b>1000</b>Руб/день</p> 
                     </div>
                     
-                    <a href="./pages/catalog.html" class="CatalogBlockCardContainerLink text-decoration-none">
-                        <button class="CatalogBlockCardButton w-100 border-0 text-white p-3 rounded">Заказать</button>
+                    <a href="./pages/catalog.html" class="CatalogBlockCardButton CatalogBlockCardContainerLink">
+                        Заказать
                     </a>
                 </div>
 
-                <div class="CatalogBlockCard bg-white rounded-3 p-4 m-2 shadow-sm">
-                    <div class="CatalogBlockCardContainer my-4 text-center d-flex flex-row justify-content-between">
-                        <img src="./assets/General/Car.png" class="CatalogBlockCardImg w-100">
+                <div class="CatalogBlockCard">
+                    <div class="CatalogBlockCardContainer">
+                        <img src="./assets/General/Car.png" class="CatalogBlockCardImg" alt="Автомобиль">
                     </div>
-                    <div class="CatalogBlockCardContainer my-4 text-center d-flex flex-row justify-content-between">
-                        <h1 class="CatalogBlockCardH1 m-0 text-dark">5-2-toyota</h1>
-                        <p class="CatalogBlockCardText m-0 text-dark"><b>1000</b>Руб/день</p> 
+                    <div class="CatalogBlockCardContainer">
+                        <h1 class="CatalogBlockCardH1">5-2-toyota</h1>
+                        <p class="CatalogBlockCardText"><b>1000</b>Руб/день</p> 
                     </div>
                     
-                    <a href="./pages/catalog.html" class="CatalogBlockCardContainerLink text-decoration-none">
-                        <button class="CatalogBlockCardButton w-100 border-0 text-white p-3 rounded">Заказать</button>
+                    <a href="./pages/catalog.html" class="CatalogBlockCardButton CatalogBlockCardContainerLink">
+                        Заказать
                     </a>
                 </div>
 
-                <div class="CatalogBlockCard bg-white rounded-3 p-4 m-2 shadow-sm">
-                    <div class="CatalogBlockCardContainer my-4 text-center d-flex flex-row justify-content-between">
-                        <img src="./assets/General/Car.png" class="CatalogBlockCardImg w-100">
+                <div class="CatalogBlockCard">
+                    <div class="CatalogBlockCardContainer">
+                        <img src="./assets/General/Car.png" class="CatalogBlockCardImg" alt="Автомобиль">
                     </div>
-                    <div class="CatalogBlockCardContainer my-4 text-center d-flex flex-row justify-content-between">
-                        <h1 class="CatalogBlockCardH1 m-0 text-dark">5-2-toyota</h1>
-                        <p class="CatalogBlockCardText m-0 text-dark"><b>1000</b>Руб/день</p> 
+                    <div class="CatalogBlockCardContainer">
+                        <h1 class="CatalogBlockCardH1">5-2-toyota</h1>
+                        <p class="CatalogBlockCardText"><b>1000</b>Руб/день</p> 
                     </div>
                     
-                    <a href="./pages/catalog.html" class="CatalogBlockCardContainerLink text-decoration-none">
-                        <button class="CatalogBlockCardButton w-100 border-0 text-white p-3 rounded">Заказать</button>
+                    <a href="./pages/catalog.html" class="CatalogBlockCardButton CatalogBlockCardContainerLink">
+                        Заказать
                     </a>
                 </div>
             </div>
         </div>
     
-        <div class="NewsBlock w-100 py-5 d-flex flex-wrap justify-content-center">
-            <div class="NewsBlockCard bg-white rounded-3 my-4 p-4 shadow-sm">
-                <img src="./assets/Home/News.png" class="NewsBlockCardImg w-100 rounded mb-4" alt="Новость"/>
-                <h1 class="NewsBlockCardH1 my-3 text-dark">В России вынесли первый приговор за продажу аккаунтов каршеринга</h1>
-                <p class="NewsBlockCardText text-secondary mb-4">В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга. Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина на 50 тыс. рублей.</p>
-                <a class="NewsBlockCardLink text-decoration-none">
-                    <button class="NewsBlockCardButton border-0 text-white px-4 py-2 rounded">Подробнее</button>
-                </a>
+        <div class="NewsBlock">
+            <div class="NewsBlockCard">
+                <img src="./assets/Home/News.png" class="NewsBlockCardImg" alt="Новость">
+                <h1 class="NewsBlockCardH1">В России вынесли первый приговор за продажу аккаунтов каршеринга</h1>
+                <p class="NewsBlockCardText">В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга. Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина на 50 тыс. рублей. Как сообщает РАПСИ со ссылкой на Объединенную пресс-службу судов Петербурга, 21-летний молодой человек обвинялся по части 2 статьи 272 УК РФ (неправомерный доступ к компьютерной информации, совершенный из корыстной заинтересованности).</p>
+                <a class="NewsBlockCardButton NewsBlockCardLink"> Подробнее </a>
             </div>
 
-            <div class="NewsBlockCard bg-white rounded-3 my-4 p-4 shadow-sm">
-                <img src="./assets/Home/News.png" class="NewsBlockCardImg w-100 rounded mb-4" alt="Новость"/>
-                <h1 class="NewsBlockCardH1 my-3 text-dark">В России вынесли первый приговор за продажу аккаунтов каршеринга</h1>
-                <p class="NewsBlockCardText text-secondary mb-4">В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга. Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина на 50 тыс. рублей.</p>
-                <a class="NewsBlockCardLink text-decoration-none">
-                    <button class="NewsBlockCardButton border-0 text-white px-4 py-2 rounded">Подробнее</button>
-                </a>
+            <div class="NewsBlockCard">
+                <img src="./assets/Home/News.png" class="NewsBlockCardImg" alt="Новость">
+                <h1 class="NewsBlockCardH1">В России вынесли первый приговор за продажу аккаунтов каршеринга</h1>
+                <p class="NewsBlockCardText">В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга. Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина на 50 тыс. рублей. Как сообщает РАПСИ со ссылкой на Объединенную пресс-службу судов Петербурга, 21-летний молодой человек обвинялся по части 2 статьи 272 УК РФ (неправомерный доступ к компьютерной информации, совершенный из корыстной заинтересованности).</p>
+                <a class="NewsBlockCardButton NewsBlockCardLink"> Подробнее </a>
             </div>
 
-            <div class="NewsBlockCard bg-white rounded-3 my-4 p-4 shadow-sm">
-                <img src="./assets/Home/News.png" class="NewsBlockCardImg w-100 rounded mb-4" alt="Новость"/>
-                <h1 class="NewsBlockCardH1 my-3 text-dark">В России вынесли первый приговор за продажу аккаунтов каршеринга</h1>
-                <p class="NewsBlockCardText text-secondary mb-4">В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга. Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина на 50 тыс. рублей.</p>
-                <a class="NewsBlockCardLink text-decoration-none">
-                    <button class="NewsBlockCardButton border-0 text-white px-4 py-2 rounded">Подробнее</button>
-                </a>
+            <div class="NewsBlockCard">
+                <img src="./assets/Home/News.png" class="NewsBlockCardImg" alt="Новость">
+                <h1 class="NewsBlockCardH1">В России вынесли первый приговор за продажу аккаунтов каршеринга</h1>
+                <p class="NewsBlockCardText">В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга. Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина на 50 тыс. рублей. Как сообщает РАПСИ со ссылкой на Объединенную пресс-службу судов Петербурга, 21-летний молодой человек обвинялся по части 2 статьи 272 УК РФ (неправомерный доступ к компьютерной информации, совершенный из корыстной заинтересованности).</p>
+                <a class="NewsBlockCardButton NewsBlockCardLink"> Подробнее </a>
             </div>
 
-            <div class="NewsBlockCard bg-white rounded-3 my-4 p-4 shadow-sm">
-                <img src="./assets/Home/News.png" class="NewsBlockCardImg w-100 rounded mb-4" alt="Новость"/>
-                <h1 class="NewsBlockCardH1 my-3 text-dark">В России вынесли первый приговор за продажу аккаунтов каршеринга</h1>
-                <p class="NewsBlockCardText text-secondary mb-4">В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга. Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина на 50 тыс. рублей.</p>
-                <a class="NewsBlockCardLink text-decoration-none">
-                    <button class="NewsBlockCardButton border-0 text-white px-4 py-2 rounded">Подробнее</button>
-                </a>
+            <div class="NewsBlockCard">
+                <img src="./assets/Home/News.png" class="NewsBlockCardImg" alt="Новость">
+                <h1 class="NewsBlockCardH1">В России вынесли первый приговор за продажу аккаунтов каршеринга</h1>
+                <p class="NewsBlockCardText">В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга. Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина на 50 тыс. рублей. Как сообщает РАПСИ со ссылкой на Объединенную пресс-службу судов Петербурга, 21-летний молодой человек обвинялся по части 2 статьи 272 УК РФ (неправомерный доступ к компьютерной информации, совершенный из корыстной заинтересованности).</p>
+                <a class="NewsBlockCardButton NewsBlockCardLink"> Подробнее </a>
             </div>
         </div>
 
-        <Footer class="Footer w-100 bg-light d-flex flex-column justify-content-center align-items-center py-4">
-            <div class="FooterButtonContainer d-flex flex-wrap justify-content-center w-90 mb-3">
-                <button class="FooterButton border-0 text-secondary px-3 py-2">
-                    <a href="./index.html" class="FooterButtonContainerLink text-decoration-none text-secondary">Главная</a>
-                </button>
-                <button class="FooterButton border-0 text-secondary px-3 py-2">
-                    <a href="./pages/cards.html" class="FooterButtonContainerLink text-decoration-none text-secondary">Банковские карты</a>
-                </button>
-                <button class="FooterButton border-0 text-secondary px-3 py-2">
-                    <a href="./pages/catalog.html" class="FooterButtonContainerLink text-decoration-none text-secondary">Каталог</a>
-                </button>
-                <button class="FooterButton border-0 text-secondary px-3 py-2">
-                    <a href="./pages/profile.html" class="FooterButtonContainerLink text-decoration-none text-secondary">Личный кабинет</a>
-                </button>
-                <button class="FooterButton border-0 text-secondary px-3 py-2">
-                    <a href="./pages/registration.html" class="FooterButtonContainerLink text-decoration-none text-secondary">Регистрация</a>
-                </button>
-                <button class="FooterButton border-0 text-secondary px-3 py-2">
-                    <a href="./pages/autorization.html" class="FooterButtonContainerLink text-decoration-none text-secondary">Авторизация</a>
-                </button>
-                <button class="FooterButton border-0 text-secondary px-3 py-2">
-                    <a href="./pages/history.html" class="FooterButtonContainerLink text-decoration-none text-secondary">История бронирований</a>
-                </button>
-                <button class="FooterButton border-0 text-secondary px-3 py-2">
-                    <a href="./pages/order.html" class="FooterButtonContainerLink text-decoration-none text-secondary">Бронирование</a>
-                </button>
-                <button class="FooterButton border-0 text-secondary px-3 py-2">
-                    <a href="./pages/offices.html" class="FooterButtonContainerLink text-decoration-none text-secondary">Филиалы</a>
-                </button>
-                <button class="FooterButton border-0 text-secondary px-3 py-2">Контакты: <b>8 800 535 35 35</b></button>
+        <footer class="Footer">
+            <div class="FooterButtonContainer">
+                <a href="./index.html" class="FooterButton FooterButtonContainerLink">Главная</a>
+                <a href="./pages/cards.html" class="FooterButton FooterButtonContainerLink">Банковские карты</a>
+                <a href="./pages/catalog.html" class="FooterButton FooterButtonContainerLink">Каталог</a>
+                <a href="./pages/profile.html" class="FooterButton FooterButtonContainerLink">Личный кабинет</a>
+                <a href="./pages/registration.html" class="FooterButton FooterButtonContainerLink">Регистрация</a>
+                <a href="./pages/autorization.html" class="FooterButton FooterButtonContainerLink">Авторизация</a>
+                <a href="./pages/history.html" class="FooterButton FooterButtonContainerLink">История бронирований</a>
+                <a href="./pages/order.html" class="FooterButton FooterButtonContainerLink">Бронирование</a>
+                <a href="./pages/offices.html" class="FooterButton FooterButtonContainerLink">Филиалы</a>
+                <span class="FooterButton">Контакты: <b>8 800 535 35 35</b></span>
             </div>
     
-            <p class="FooterText text-secondary m-0">©2025 Страхование онлаин</p>
-        </Footer>
-        
+            <p class="FooterText">©2025 Страхование онлаин</p>
+        </footer>
     </div>
 </body>
 </html>

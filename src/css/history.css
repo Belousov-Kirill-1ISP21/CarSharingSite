@@ -13,7 +13,6 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; 
 }
 
 .wrapper {
@@ -54,6 +53,7 @@ html, body {
     transform: scale(1.01);
 }
 
+/* Header Styles */
 .Header {
     width: 100%;
     height: 10vh;
@@ -127,6 +127,7 @@ html, body {
     background-color: #6a639c;
 }
 
+/* History Block Styles */
 .HistoryBlock {
     display: flex;
     flex-direction: column;
@@ -195,15 +196,11 @@ html, body {
     object-fit: cover;
 }
 
-.HistoryBlockCardContainerLink {
-    width: 100%;
-    text-decoration: none;
-    height: 3vw;
-}
-
 .HistoryBlockCardButton {
     width: 100%;
-    height: 100%;
+    height: 2.5vw;
+    text-align: center;
+    padding: 1vh;
     color: white;
     background-color: #000033;
     border: none;
@@ -218,6 +215,7 @@ html, body {
     background-color: #3a5a9a;
 }
 
+/* Footer Styles */
 .Footer {
     width: 100%;
     min-height: 22vh;

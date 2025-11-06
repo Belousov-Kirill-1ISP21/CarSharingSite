@@ -18,26 +18,39 @@ html, body {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
 }
 
 .PanelsContainer {
     width: 95%;
     height: 95%;
+    display: flex;
     gap: 2%;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .LeftPanelsContainer {
     width: 44%;
     height: 95%;
+    display: flex;
     gap: 2%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/* Side Panel Styles */
 .SidePanelContainer {
     background-color: white;
     border-radius: 14px;
     width: 54%;
     height: 60%;
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
@@ -45,12 +58,17 @@ html, body {
     height: 100%;
     width: 100%;
     padding: 8%;
+    display: flex;
+    flex-direction: column;
 }
 
 .SidePanelHead {
     height: 20%;
     width: 100%;
+    text-align: left;
     border-bottom: 2px solid #F3F4F6;
+    display: flex;
+    align-items: center;
 }
 
 .SidePanelHeadH1 {
@@ -59,14 +77,26 @@ html, body {
     margin: 0;
 }
 
+.SidePanelContainerInner {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .SidePanelLine {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
 .SidePanelLineButtonContainer,
 .SidePanelLineButtonLink {
+    display: flex;
+    align-items: center;
     gap: 12px;
     padding: 12px;
     border-radius: 8px;
@@ -96,6 +126,7 @@ html, body {
     flex: 1;
 }
 
+/* Order Panel Styles */
 .OrderContainer {
     background-color: white;
     border-radius: 14px;
@@ -108,12 +139,17 @@ html, body {
     height: 100%;
     width: 100%;
     padding: 4%;
+    display: flex;
+    flex-direction: column;
 }
 
 .OrderPanelHead {
     height: 15%;
     width: 100%;
+    text-align: left;
     border-bottom: 2px solid #F3F4F6;
+    display: flex;
+    align-items: center;
     margin-bottom: 2%;
 }
 
@@ -124,6 +160,8 @@ html, body {
 }
 
 .OrderPanelContainer {
+    display: flex;
+    flex-direction: row;
     gap: 2%;
     height: 100%;
 }
@@ -132,6 +170,8 @@ html, body {
     border-radius: 10px;
     padding: 4%;
     border: 1px solid #e9ecef;
+    display: flex;
+    flex-direction: column;
     gap: 1%;
     height: 100%;
 }
@@ -149,10 +189,14 @@ html, body {
     margin-top: 4%;
 }
 
+/* Main Panel Styles */
 .MainPanelContainer {
     border-radius: 14px;
     width: 100%;
     height: 89%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .MainPanel {
@@ -160,13 +204,19 @@ html, body {
     height: 80%;
     width: 44%;
     padding: 3%;
+    display: flex;
+    flex-direction: column;
     border-radius: 14px;
 }
 
 .MainPanelHead {
     height: 10%;
     width: 100%;
+    text-align: left;
     border-bottom: 2px solid #F3F4F6;
+    align-items: end;
+    display: flex
+;
 }
 
 .MainPanelHeadH1 {
@@ -175,9 +225,25 @@ html, body {
     margin: 0 0 2% 0;
 }
 
+.MainPanelHeadText {
+    font-size: 1.8vh;
+    color: #666;
+    margin: 0;
+}
+
+.MainPanelContainerInner {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .MainPanelLine {
     width: 100%;
     height: 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #F3F4F6;
     padding: 2% 0;
 }
@@ -203,6 +269,7 @@ html, body {
 @media (max-width: 1200px) {
     .LeftPanelsContainer {
         width: 88%;
+        flex-direction: column;
         height: auto;
         gap: 20px;
     }
